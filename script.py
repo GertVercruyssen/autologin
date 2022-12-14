@@ -35,11 +35,11 @@ sleeprand = randint(0, 5)
 sleep(sleeprand)
 
 endTime = time(10, 00, 55)
-while endTimeTime > datetime.today().time():
+while endTime > datetime.today().time():
     try:
         buttons = driver.find_elements(By.TAG_NAME, 'button')
         thabutton = buttons[1]
-        print("pressing button "+thabutton.text+" attempt ",(i+1))
+        print("pressing button "+thabutton.text+" attempt ")
         thabutton.click()
         break
     except:
